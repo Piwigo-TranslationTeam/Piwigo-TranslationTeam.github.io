@@ -245,8 +245,9 @@
 			#me .pic
 			{
 				display: block;
-        position: relative;
-				float:right;
+				position: relative;
+				float: right;
+				margin-left: 2em;
 				height: 100%;
 				text-decoration: none;
 			}

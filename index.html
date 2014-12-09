@@ -8,8 +8,7 @@
 	<head>
 		<title>Piwigo TranslationTeam</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -17,8 +16,8 @@
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" media="(min-width: 737px)" />
+			<link rel="stylesheet" href="css/style-noscript.css" media="(max-width: 736px)" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -30,7 +29,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#work" class="icon fa-folder"><span>Work</span></a>
+						<a href="#work" class="icon fa-folder"><span>How I work?</span></a>
 						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
 					</nav>
 
@@ -40,8 +39,8 @@
 						<!-- Me -->
 							<article id="me" class="panel">
 								<a href="#work" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
+									<span class="arrow icon fa-chevron-right"><span>See how I work</span></span>
+									<img src="images/me.jpg">
 								</a>
 								<header>
 									<h1>Piwigo TranslationTeam</h1>
@@ -56,58 +55,19 @@
 						<!-- Work --> 
 							<article id="work" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>How I work</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit. 
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-									luctus elit eget interdum.
+									I am the <a href="https://github.com/Piwigo-TranslationTeam">Github user</a> used by <a href="http://piwigo.org/translate/">Piwigo Translate</a>. I also have a big brother (<a href="http://piwigo.org/dev/timeline?author=TranslationTeam">TranslationTeam</a>) used on Piwigo.org Subversion repository.
+                </p>
+                <p>
+                  Both of us are used to automatically pull <code>language</code> directories of Piwigo and its plugins and push back new translations. The translation is done on <a href="https://github.com/Piwigo/Lexiglot">Lexiglot</a> by our team of 100+ users arround the world.
+                </p>
+                <p>
+                  While pulls are automatic to present the most up-to-date language files in Lexiglot, pulls are always reviewed by a Piwigo Team member.
 								</p>
 								<section>
-									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-									</div>
+                  <img src="http://placehold.it/800x800">
 								</section>
 							</article>
 
@@ -116,19 +76,19 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<form action="http://forms.brace.io/damien.sorel@gmail.com" method="post">
 									<div>
 										<div class="row">
-											<div class="6u">
+											<div class="6u 12u(2)">
 												<input type="text" name="name" placeholder="Name" />
 											</div>
-											<div class="6u">
-												<input type="text" name="email" placeholder="Email" />
+											<div class="6u 12u(2)">
+												<input type="text" name="_replyto" placeholder="Email" />
 											</div>
 										</div>
 										<div class="row">
 											<div class="12u">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="_subject" placeholder="Subject" />
 											</div>
 										</div>
 										<div class="row">
@@ -138,12 +98,32 @@
 										</div>
 										<div class="row">
 											<div class="12u">
+                        <input type="hidden" name="_next" value="http://piwigo-translationteam.github.io#thanks" />
+                        <input type="text" name="_gotcha" style="display:none" />
 												<input type="submit" value="Send Message" />
 											</div>
 										</div>
 									</div>
 								</form>
 							</article>
+            
+            <!-- Thanks -->
+              <article id="thanks" class="panel">
+								<header>
+									<h2>Message received</h2>
+								</header>
+                
+                <p>You will received a response as soon as possible. (Not by me... I am robot remember ?!)</p>
+                
+                <div class="row">
+                  <div class="4u -4u 10u(2) -1u(2)">
+                    <a href="http://piwigo.org">
+                      <img src="images/logo-piwigo.svg" type="image/svg+xml" class="image fit">
+                    </a>
+                  </div>
+                </div>
+                
+              </article>
 
 					</div>
 		
