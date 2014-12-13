@@ -242,9 +242,20 @@
             panels[hash]._activate(true);
 
           $wrapper.fadeTo(400, 1.0);
+          
+          $('.floatlabel').floatlabel();
         
+          $('#contact form').on('submit', function(e) {
+            if (!grecaptcha.getResponse()) {
+              e.preventDefault();
+            }
+          });
       }
           
     });
 
 })(jQuery);
+
+function onValidRecaptcha() {
+  $('#contact [type=submit]').fadeIn();
+}

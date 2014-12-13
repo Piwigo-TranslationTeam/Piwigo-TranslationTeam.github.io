@@ -12,7 +12,9 @@
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
     <script src="js/skel.min.js"></script>
+    <script src="js/floatlabels.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <noscript>
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
@@ -80,27 +82,32 @@
                   <div>
                     <div class="row">
                       <div class="6u 12u(2)">
-                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" required name="name" class="floatlabel" placeholder="Name" />
                       </div>
                       <div class="6u 12u(2)">
-                        <input type="text" name="_replyto" placeholder="Email" />
+                        <input type="email" required name="_replyto" class="floatlabel" placeholder="Email" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="12u">
-                        <input type="text" name="_subject" placeholder="Subject" />
+                        <input type="text" required name="_subject" class="floatlabel" placeholder="Subject" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="12u">
-                        <textarea name="message" placeholder="Message" rows="8"></textarea>
+                        <textarea name="message" required class="floatlabel" placeholder="Message" rows="8"></textarea>
+                      </div>
+                      <div class="12u" style="display:none">
+                        <input type="text" name="_gotcha"  />
                       </div>
                     </div>
                     <div class="row">
-                      <div class="12u">
+                      <div class="6u 12u(2)">
+                        <div class="g-recaptcha" data-sitekey="6LdhP_8SAAAAAC-szQrl13wwDnjGkR7IDV0n9rhV" data-callback="onValidRecaptcha"></div>
+                      </div>
+                      <div class="6u 12u(2)">
                         <input type="hidden" name="_next" value="http://piwigo-translationteam.github.io#thanks" />
-                        <input type="text" name="_gotcha" style="display:none" />
-                        <input type="submit" value="Send Message" />
+                        <input type="submit" value="Send Message" style="display:none" />
                       </div>
                     </div>
                   </div>
